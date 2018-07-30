@@ -25,7 +25,7 @@
     CGFloat centerBtnWidth = CGRectGetWidth(self.centerBtn.frame);
     CGFloat centerBtnHeight = CGRectGetHeight(self.centerBtn.frame);
     // 设置中间按钮的位置，居中，凸起一丢丢
-    self.centerBtn.center = CGPointMake(barWidth / 2, barHeight - centerBtnHeight/2 - 5);
+    self.centerBtn.center = CGPointMake(barWidth / 2, /*barHeight - centerBtnHeight/2 - 5*/22);
     // 重新布局其他 tabBarItem
     // 平均分配其他 tabBarItem 的宽度
     CGFloat barItemWidth = (barWidth - centerBtnWidth) / tabBarButtonArray.count;
@@ -57,12 +57,12 @@
     
 }
 
+//重写
 - (UIButton *)centerBtn
 {
     if (_centerBtn == nil) {
-        _centerBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 60)];
-//        [_centerBtn setImage:[UIImage imageNamed:@"centerIcon"] forState:UIControlStateNormal];
-        _centerBtn.backgroundColor = [UIColor blueColor];
+        _centerBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        [_centerBtn setImage:[UIImage imageNamed:@"jiajia.png"] forState:UIControlStateNormal];
         [_centerBtn addTarget:self action:@selector(tabBarCenterBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _centerBtn;

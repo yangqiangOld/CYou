@@ -22,9 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    YQ_TabBar *tabBar = [[YQ_TabBar alloc] init];
-//    tabBar.delegateCenter = self;
-//    [self setValue:tabBar forKey:@"tabBar"];
+    YQ_TabBar *tabBar = [[YQ_TabBar alloc] init];
+    tabBar.delegateCenter = self;
+    [self setValue:tabBar forKey:@"tabBar"];
     
     [self addchildVc];
 }
@@ -38,9 +38,9 @@
                   title:@"雇主"
               titleSize:13.0
           titleFontName:@"HeiTi SC"
-          selectedImage:nil
+          selectedImage:@"first_selected.png"
      selectedTitleColor:[UIColor redColor]
-            normalImage:nil
+            normalImage:@"first_normal.png"
        normalTitleColor:[UIColor grayColor]];
     
     WKViewController *wk = [[WKViewController alloc] init];
@@ -50,9 +50,9 @@
                   title:@"威客"
               titleSize:13.0
           titleFontName:@"HeiTi SC"
-          selectedImage:nil
+          selectedImage:@"second_selected.png"
      selectedTitleColor:[UIColor redColor]
-            normalImage:nil
+            normalImage:@"second_normal.png"
        normalTitleColor:[UIColor grayColor]];
     
     ZPViewController *zp = [[ZPViewController alloc] init];
@@ -62,9 +62,9 @@
                   title:@"作品"
               titleSize:13.0
           titleFontName:@"HeiTi SC"
-          selectedImage:nil
+          selectedImage:@"third_selected.png"
      selectedTitleColor:[UIColor redColor]
-            normalImage:nil
+            normalImage:@"third_normal.png"
        normalTitleColor:[UIColor grayColor]];
     
     PersonViewController *person = [[PersonViewController alloc] init];
@@ -74,9 +74,9 @@
                   title:@"个人"
               titleSize:13.0
           titleFontName:@"HeiTi SC"
-          selectedImage:nil
+          selectedImage:@"fourth_selected.png"
      selectedTitleColor:[UIColor redColor]
-            normalImage:nil
+            normalImage:@"fourth_normal.png"
        normalTitleColor:[UIColor grayColor]];
 
     
