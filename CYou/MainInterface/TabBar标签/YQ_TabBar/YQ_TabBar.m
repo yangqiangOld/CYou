@@ -21,9 +21,9 @@
     }
     
     CGFloat barWidth = self.bounds.size.width;
-    CGFloat barHeight = self.bounds.size.height;
+//    CGFloat barHeight = self.bounds.size.height;
     CGFloat centerBtnWidth = CGRectGetWidth(self.centerBtn.frame);
-    CGFloat centerBtnHeight = CGRectGetHeight(self.centerBtn.frame);
+//    CGFloat centerBtnHeight = CGRectGetHeight(self.centerBtn.frame);
     // 设置中间按钮的位置，居中，凸起一丢丢
     self.centerBtn.center = CGPointMake(barWidth / 2, /*barHeight - centerBtnHeight/2 - 5*/22);
     // 重新布局其他 tabBarItem

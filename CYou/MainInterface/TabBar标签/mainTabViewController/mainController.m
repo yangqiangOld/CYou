@@ -12,6 +12,8 @@
 #import "WKViewController.h"
 #import "ZPViewController.h"
 #import "PersonViewController.h"
+//Demo
+#import "ModifyTheStoreVC.h"
 
 @interface mainController ()<YQ_TabBarDelegate>
 
@@ -31,8 +33,8 @@
 
 - (void)addchildVc {
     
-    GZViewController *gz = [[GZViewController alloc] init];
-    gz.view.backgroundColor = [UIColor yellowColor];
+    ModifyTheStoreVC *gz = [[ModifyTheStoreVC alloc] init];
+    gz.view.backgroundColor = [UIColor whiteColor];
     UINavigationController *GZnav = [[UINavigationController alloc] initWithRootViewController:gz];
     [self setTabBarItem:GZnav.tabBarItem
                   title:@"雇主"
@@ -79,11 +81,9 @@
             normalImage:@"fourth_normal.png"
        normalTitleColor:[UIColor grayColor]];
 
-    
     NSArray *vcArr = [NSArray arrayWithObjects:GZnav, WKnav, ZPnav, PSnav, nil];
     
     self.viewControllers = vcArr;
-    
 }
 
 - (void)setTabBarItem:(UITabBarItem *)tabbarItem

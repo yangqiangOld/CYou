@@ -10,6 +10,6 @@
 
 @interface BaseRequest : NSObject
 
-- (void)requestPostWithUrl:(NSString *)url para:(NSDictionary *)paras;
+//- (void)requestPostWithUrl:(NSString *)url para:(NSDictionary *)paras;
 
 @end
