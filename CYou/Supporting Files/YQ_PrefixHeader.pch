@@ -12,13 +12,23 @@
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 //定义返回请求数据的block类型
 typedef void (^ReturnValueBlock) (id returnValue);
 typedef void (^ErrorCodeBlock) (id errorCode);
 typedef void (^FailureBlock)(void);
 typedef void (^NetWorkBlock)(int netConnetState);
 
+/* 使用高德地图API，请注册Key，注册地址：http://lbs.amap.com/console/key */
+const static NSString *APIKey = @"2c5257c39463effb3b1b7193df03fb01";
+
 #import "AFNetworking.h"
 #import "Masonry.h"
+
+//拓展
+#import "UIColor+Extesion.h"
+#import "UILabel+Extesion.h"
 
 #endif /* YQ_PrefixHeader_pch */

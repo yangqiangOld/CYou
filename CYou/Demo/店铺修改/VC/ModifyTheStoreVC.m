@@ -10,7 +10,7 @@
 #import "MTSTableView.h"
 #import "MTSViewModel.h"
 
-@interface ModifyTheStoreVC ()
+@interface ModifyTheStoreVC ()<CeshiProtocol, MTSTableViewDelegate>
 
 @end
 
@@ -23,9 +23,11 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     MTSTableView *mtView = [[MTSTableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+    mtView.delegate = self;
     [self.view addSubview:mtView];
     
     MTSViewModel *viewModel = [[MTSViewModel alloc] init];
+    [viewModel registerHybridUrlHanlder:self];
     [viewModel netWorkStateWithNetConnectBlock:^(int netConnetState) {
         NSLog(@"修改页网络状态%d", netConnetState);
     } withURLStr:nil];
@@ -39,6 +41,20 @@
     }];
     
     [viewModel requestData];
+    
+}
+
+- (void)tableViweOfSection:(NSInteger)section withRow:(NSInteger)index {
+    [self.tabBarController.tabBar setHidden:YES];
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor yellowColor];
+    vc.title = @"测试控制器";
+    [self.navigationController pushViewController:vc animated:YES];
+    [self.tabBarController.tabBar setHidden:NO];
+}
+
+- (void)ceshiProtocol:(CeshiProtocolBlock)handler {
+    NSLog(@"协议头文件测试");
     
 }
 

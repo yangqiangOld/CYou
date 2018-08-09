@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CeshiProtocol.h"
 
 @interface MTSViewModel : NSObject
 
@@ -23,5 +24,7 @@
                WithFailureBlock: (FailureBlock) failureBlock;
 
 - (void)requestData;
+
+- (void)registerHybridUrlHanlder:(id<CeshiProtocol>)handler;
 
 @end

@@ -45,4 +45,12 @@
     self.returnValueBlock(arr);
 }
 
+- (void)registerHybridUrlHanlder:(id<CeshiProtocol>)handler {
+    
+    [handler  ceshiProtocol:^(int ceNumber) {
+        
+    }];
+    
+}
+
 @end

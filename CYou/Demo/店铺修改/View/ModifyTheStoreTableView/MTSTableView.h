@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MTSTableViewDelegate <NSObject>
+
+- (void)tableViweOfSection:(NSInteger)section withRow:(NSInteger)index;
+
+@end
+
 @interface MTSTableView : UIView
+
+@property (nonatomic, assign)id <MTSTableViewDelegate> delegate;
 
 - (void)reloadTableView;
 

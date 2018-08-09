@@ -17,6 +17,7 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self addModeifyFirstView];
     }
     return self;
@@ -24,12 +25,25 @@
 
 - (void)addModeifyFirstView {
     title_ = [[UILabel alloc] init];
+    title_.textColor = [UIColor colorWithHexString:@"999999"];
+    title_.font = [UIFont systemFontOfSize:18];
+    
     content_ = [[UILabel alloc] init];
     icon_ = [[UIImageView alloc] init];
     
     [self.contentView addSubview:title_];
     [self.contentView addSubview:content_];
     [self.contentView addSubview:icon_];
+    
+    UIView *line = [[UIView alloc] init];
+    line.backgroundColor = [UIColor colorWithHexString:@"e7e7e7"];
+    [self.contentView addSubview:line];
+    
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.bottom.mas_equalTo(self.mas_bottom);
+        make.height.mas_equalTo(@1);
+    }];
 }
 
 - (void)layoutSubviews {
