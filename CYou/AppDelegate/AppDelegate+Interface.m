@@ -19,7 +19,6 @@
 //        NSLog(@"网络状态：%ld", status);
 //    }];
     
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     

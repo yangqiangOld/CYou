@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 #import "AppDelegate+Interface.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<AMapLocationManagerDelegate> {
+    AMapLocationManager *locationManger;
+}
 
 @end
 
@@ -18,9 +20,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [AMapServices sharedServices].apiKey = (NSString *)GD_APIKey;
+    [[AMapServices sharedServices] setEnableHTTPS:YES];
+
+    locationManger = [[AMapLocationManager alloc] init];
+    locationManger.delegate = self;
+
+    locationManger.distanceFilter = 200;
+    locationManger.locatingWithReGeocode = YES;
+
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9) {
+        locationManger.allowsBackgroundLocationUpdates = YES;
+    }
+    [locationManger startUpdatingLocation];
+
     [self rootViewControllerInterface];
     
     return YES;
+}
+
+- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode
+{
+    NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
+    if (reGeocode)
+    {
+        NSLog(@"reGeocode:%@", reGeocode);
+    }
 }
 
 #pragma mark - Core Data stack

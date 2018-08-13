@@ -59,7 +59,6 @@
 		04B651E121193D9600A277B5 /* UILabel+Extesion.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B651E021193D9600A277B5 /* UILabel+Extesion.m */; };
 		04B651E52119706100A277B5 /* ModeifyChooseSkillsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B651E42119706100A277B5 /* ModeifyChooseSkillsCollectionViewCell.m */; };
 		04BC5539211C214100F34C95 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC5538211C214100F34C95 /* LocationViewController.m */; };
-		04BC553D211C34F900F34C95 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BC553C211C34F900F34C95 /* AMapFoundationKit.framework */; };
 		04C98B68210173C20001069D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C98B47210173C20001069D /* AFHTTPSessionManager.m */; };
 		04C98B69210173C20001069D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C98B4A210173C20001069D /* AFNetworkReachabilityManager.m */; };
 		04C98B6A210173C20001069D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C98B4C210173C20001069D /* AFSecurityPolicy.m */; };
@@ -91,6 +90,19 @@
 		04E59CA82106B8EE0033813E /* AFNetworking_YQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E59CA72106B8EE0033813E /* AFNetworking_YQ.m */; };
 		04E59CAB2106CCFA0033813E /* AppDelegate+OperatingState.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E59CAA2106CCFA0033813E /* AppDelegate+OperatingState.m */; };
 		04E59CAF2106CF1D0033813E /* AppDelegate+Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E59CAE2106CF1D0033813E /* AppDelegate+Interface.m */; };
+		04E7DCCC212121B900670F5C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCCB212121B900670F5C /* JavaScriptCore.framework */; };
+		04E7DCCE212121C100670F5C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCCD212121C100670F5C /* SystemConfiguration.framework */; };
+		04E7DCD0212121CD00670F5C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCCF212121CD00670F5C /* CoreTelephony.framework */; };
+		04E7DCD2212121D500670F5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCD1212121D400670F5C /* CoreLocation.framework */; };
+		04E7DCD42121221300670F5C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCD32121221300670F5C /* libc++.tbd */; };
+		04E7DCD62121221A00670F5C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCD52121221A00670F5C /* libz.tbd */; };
+		04E7DCD82121222500670F5C /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCD72121222500670F5C /* libstdc++.6.0.9.tbd */; };
+		04E7DCDA2121223E00670F5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCD92121223E00670F5C /* Security.framework */; };
+		04E7DCEF2121663000670F5C /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCEC2121662F00670F5C /* MAMapKit.framework */; };
+		04E7DCF02121663000670F5C /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCED2121662F00670F5C /* AMapFoundationKit.framework */; };
+		04E7DCF12121663000670F5C /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCEE2121662F00670F5C /* AMapLocationKit.framework */; };
+		04E7DCF72121740600670F5C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCF32121731100670F5C /* ExternalAccessory.framework */; };
+		04E7DCF82121740C00670F5C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E7DCF52121731A00670F5C /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,7 +204,6 @@
 		04B651E42119706100A277B5 /* ModeifyChooseSkillsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModeifyChooseSkillsCollectionViewCell.m; sourceTree = "<group>"; };
 		04BC5537211C214100F34C95 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		04BC5538211C214100F34C95 /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
-		04BC553C211C34F900F34C95 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
 		04C98B45210173C20001069D /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		04C98B46210173C20001069D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		04C98B47210173C20001069D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
@@ -264,6 +275,19 @@
 		04E59CAA2106CCFA0033813E /* AppDelegate+OperatingState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+OperatingState.m"; sourceTree = "<group>"; };
 		04E59CAD2106CF1D0033813E /* AppDelegate+Interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Interface.h"; sourceTree = "<group>"; };
 		04E59CAE2106CF1D0033813E /* AppDelegate+Interface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Interface.m"; sourceTree = "<group>"; };
+		04E7DCCB212121B900670F5C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		04E7DCCD212121C100670F5C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		04E7DCCF212121CD00670F5C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		04E7DCD1212121D400670F5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04E7DCD32121221300670F5C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		04E7DCD52121221A00670F5C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		04E7DCD72121222500670F5C /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		04E7DCD92121223E00670F5C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		04E7DCEC2121662F00670F5C /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		04E7DCED2121662F00670F5C /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		04E7DCEE2121662F00670F5C /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		04E7DCF32121731100670F5C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		04E7DCF52121731A00670F5C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,7 +295,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BC553D211C34F900F34C95 /* AMapFoundationKit.framework in Frameworks */,
+				04E7DCF82121740C00670F5C /* GLKit.framework in Frameworks */,
+				04E7DCF72121740600670F5C /* ExternalAccessory.framework in Frameworks */,
+				04E7DCD82121222500670F5C /* libstdc++.6.0.9.tbd in Frameworks */,
+				04E7DCD62121221A00670F5C /* libz.tbd in Frameworks */,
+				04E7DCD42121221300670F5C /* libc++.tbd in Frameworks */,
+				04E7DCEF2121663000670F5C /* MAMapKit.framework in Frameworks */,
+				04E7DCDA2121223E00670F5C /* Security.framework in Frameworks */,
+				04E7DCD2212121D500670F5C /* CoreLocation.framework in Frameworks */,
+				04E7DCD0212121CD00670F5C /* CoreTelephony.framework in Frameworks */,
+				04E7DCCE212121C100670F5C /* SystemConfiguration.framework in Frameworks */,
+				04E7DCF12121663000670F5C /* AMapLocationKit.framework in Frameworks */,
+				04E7DCCC212121B900670F5C /* JavaScriptCore.framework in Frameworks */,
+				04E7DCF02121663000670F5C /* AMapFoundationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +491,7 @@
 				049B1E892100324200310FF6 /* CYouTests */,
 				049B1E942100324200310FF6 /* CYouUITests */,
 				049B1E6C210031F300310FF6 /* Products */,
+				04E7DCCA212121B800670F5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -712,17 +749,9 @@
 		04BC553A211C324E00F34C95 /* GDMap */ = {
 			isa = PBXGroup;
 			children = (
-				04BC553B211C325900F34C95 /* SDK_V2.61 */,
+				04E7DCE321215C3700670F5C /* SDK_VERION */,
 			);
 			path = GDMap;
-			sourceTree = "<group>";
-		};
-		04BC553B211C325900F34C95 /* SDK_V2.61 */ = {
-			isa = PBXGroup;
-			children = (
-				04BC553C211C34F900F34C95 /* AMapFoundationKit.framework */,
-			);
-			path = SDK_V2.61;
 			sourceTree = "<group>";
 		};
 		04C98B422101722F0001069D /* OtherLib */ = {
@@ -859,6 +888,33 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		04E7DCCA212121B800670F5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E7DCF52121731A00670F5C /* GLKit.framework */,
+				04E7DCF32121731100670F5C /* ExternalAccessory.framework */,
+				04E7DCD92121223E00670F5C /* Security.framework */,
+				04E7DCD72121222500670F5C /* libstdc++.6.0.9.tbd */,
+				04E7DCD52121221A00670F5C /* libz.tbd */,
+				04E7DCD32121221300670F5C /* libc++.tbd */,
+				04E7DCD1212121D400670F5C /* CoreLocation.framework */,
+				04E7DCCF212121CD00670F5C /* CoreTelephony.framework */,
+				04E7DCCD212121C100670F5C /* SystemConfiguration.framework */,
+				04E7DCCB212121B900670F5C /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04E7DCE321215C3700670F5C /* SDK_VERION */ = {
+			isa = PBXGroup;
+			children = (
+				04E7DCED2121662F00670F5C /* AMapFoundationKit.framework */,
+				04E7DCEE2121662F00670F5C /* AMapLocationKit.framework */,
+				04E7DCEC2121662F00670F5C /* MAMapKit.framework */,
+			);
+			path = SDK_VERION;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -926,6 +982,11 @@
 				TargetAttributes = {
 					049B1E6A210031F300310FF6 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					049B1E852100324200310FF6 = {
 						CreatedOnToolsVersion = 9.4;
@@ -1220,7 +1281,7 @@
 				DEVELOPMENT_TEAM = ULFN7USZ4R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/CYou/OtherLib/GDMap/SDK",
+					"$(PROJECT_DIR)/CYou/OtherLib/GDMap/SDK_VERION",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "/Users/vikecn/Desktop/RItem/CYou/CYou/Supporting Files/YQ_PrefixHeader.pch";
@@ -1230,9 +1291,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vikecn.CYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1244,7 +1306,7 @@
 				DEVELOPMENT_TEAM = ULFN7USZ4R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/CYou/OtherLib/GDMap/SDK",
+					"$(PROJECT_DIR)/CYou/OtherLib/GDMap/SDK_VERION",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "/Users/vikecn/Desktop/RItem/CYou/CYou/Supporting Files/YQ_PrefixHeader.pch";
@@ -1254,9 +1316,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vikecn.CYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
